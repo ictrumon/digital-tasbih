@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="font-extrabold text-center text-4xl text-green-600 mt-8">Digital Tasbih</h1>
+    <section class="grid lg:grid-cols-3 gap-5 justify-center p-10">
+        <div class="bg-slate-300 p-5 rounded-2xl">
+            <h1 class="font-bold text-3xl text-center">Subhanallah</h1>
+            <h2 id="count1" class="font-bold text-3xl text-center mt-5">0</h2>
+            <div class="flex justify-center gap-5 mt-5">
+                <button onclick="clickMe1()" class="bg-green-500 p-3 text-white rounded-lg font-semibold">Increase</button>
+                <button id="btn-minus1" class="bg-red-500 p-3 text-white rounded-lg font-semibold"><Del></Del>Decrease</button>
+            </div>
+        </div>
+        <div class="bg-slate-300 p-5 rounded-2xl">
+            <h1 class="font-bold text-3xl text-center">Alhamdulillah</h1>
+            <h2 id="count2" class="font-bold text-3xl text-center mt-5">0</h2>
+            <div class="flex justify-center gap-5 mt-5">
+                <button onclick="clickMe2()" class="bg-green-500 p-3 text-white rounded-lg font-semibold">Increase</button>
+                <button id="btn-minus2" class="bg-red-500 p-3 text-white rounded-lg font-semibold"><Del></Del>Decrease</button>
+            </div>
+        </div>
+        <div class="bg-slate-300 p-5 rounded-2xl">
+            <h1 class="font-bold text-3xl text-center">Allahu Akbar</h1>
+            <h2 id="count3" class="font-bold text-3xl text-center mt-5">0</h2>
+            <div class="flex justify-center gap-5 mt-5">
+                <button onclick="clickMe3()" class="bg-green-500 p-3 text-white rounded-lg font-semibold">Increase</button>
+                <button id="btn-minus3" class="bg-red-500 p-3 text-white rounded-lg font-semibold"><Del></Del>Decrease</button>
+            </div>
+        </div>
+    </section>
+  <script src="tasbih/tasbih.js"></script>
+</body>
+</html>
